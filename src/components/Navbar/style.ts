@@ -1,38 +1,57 @@
 import styled from 'styled-components';
+import { Layout, Menu } from 'antd';
 
-export const NavbarContainer = styled.nav`
-  width: 100%;
-  height: 70px;
-  background-color: #4a3f35;
+const { Header } = Layout;
+
+export const NavbarWrapper = styled(Header)`
+  background-color: #5A5040;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
+  padding: 0 30px;
+  height: 90px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 export const Logo = styled.img`
-  height: 50px;
-`;
+  height: 60px;
+  transition: all 0.3s ease;
 
-export const MenuContainer = styled.div`
-  display: flex;
-  gap: 24px;
-  align-items: center;
-
-  a {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 16px;
+  &:hover {
+    transform: scale(1.1);
   }
 `;
 
-export const OrçamentoButton = styled.button`
-  background-color: #d4af37;
-  color: #4a3f35;
-  font-weight: bold;
+export const NavMenu = styled(Menu)`
+  background-color: transparent;
   border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  & > li {
+    margin: 0 24px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #E0CEAA !important;
+      background-color: transparent !important;
+    }
+
+    &.ant-menu-item-selected {
+      color: #d4af37 !important;
+    }
+  }
 `;
+
+export const NavbarContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+`;
+

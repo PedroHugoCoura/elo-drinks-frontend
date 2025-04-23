@@ -1,18 +1,35 @@
-import { Link } from 'react-router-dom';
-import { NavbarContainer, Logo, MenuContainer, OrçamentoButton } from './style';
+import { Menu } from 'antd';
+import { Link, useLocation } from 'react-router-dom';
+import { NavbarWrapper, Logo, NavMenu, NavbarContent } from './style';
 
 export default function Navbar() {
+  const location = useLocation();
+
+  const selectedKey = location.pathname === '/' ? 'home' :
+                      location.pathname === '/drinks' ? 'drinks' :
+                      location.pathname === '/services' ? 'services' :
+                      location.pathname === '/orçamento' ? 'orçamento' :
+                      '';
+
   return (
-    <NavbarContainer>
-      <MenuContainer>
-        <Link to="/">HOME</Link>
-        <Link to="/drinks">DRINKS</Link>
-      </MenuContainer>
-      <Logo src="/logo.png" alt="Elo Drinks" />
-      <MenuContainer>
-        <Link to="/services">SERVIÇOS</Link>
-        <OrçamentoButton>Orçamento</OrçamentoButton>
-      </MenuContainer>
-    </NavbarContainer>
+    <NavbarWrapper>
+      <NavbarContent>
+        <Logo src="logo.png" alt="Logo" />
+      </NavbarContent>
+      <NavMenu mode="horizontal" selectedKeys={[selectedKey]}>
+        <Menu.Item key="home">
+          <Link to="/">Home</Link>
+        </Menu.Item>
+        <Menu.Item key="drinks">
+          <Link to="/drinks">Drinks</Link>
+        </Menu.Item>
+        <Menu.Item key="services">
+          <Link to="/services">Serviços</Link>
+        </Menu.Item>
+        <Menu.Item key="orçamento">
+          <Link to="/orçamento">Orçamento</Link>
+        </Menu.Item>
+      </NavMenu>
+    </NavbarWrapper>
   );
 }
