@@ -2,6 +2,7 @@ import { Row, Col } from 'antd';
 import { SectionTitle, StyledCard, ServiceButton, ServicesWrapper } from '../Serviços/style';
 import { Typography } from 'antd';
 import Navbar from '../../components/Navbar/navbar';
+import Footer from '../../components/Footer';
 
 const { Title, Paragraph } = Typography;
 
@@ -37,13 +38,14 @@ const ServicesPage = () => {
               hoverable
               cover={<img alt="Eventos Corporativos" src="negocios.jpg" />}
             >
-              <Title level={4}>Orçamento para Eventos Corporativos</Title>
+              <Title level={5}>Orçamento para Eventos Corporativos</Title>
               <Paragraph>Experiência de bar sofisticada para eventos empresariais.</Paragraph>
               <ServiceButton>Solicitar Orçamento</ServiceButton>
             </StyledCard>
           </Col>
         </Row>
       </ServicesWrapper>
+      <Footer />
     </>
   );
 };

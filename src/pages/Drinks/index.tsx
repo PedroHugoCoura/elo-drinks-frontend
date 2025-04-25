@@ -9,6 +9,7 @@ import {
   InfoOverlay,
   DrinkWrapperCartaAberta,
 } from "./style";
+import Footer from "../../components/Footer";
 
 export default function Drinks() {
   return (
@@ -81,6 +82,7 @@ export default function Drinks() {
         </Row>
       </DrinksWrapper>
       <FloatingButtonWhatsApp />
+      <Footer />
     </>
   );
 }

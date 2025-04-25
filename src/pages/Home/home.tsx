@@ -2,6 +2,7 @@ import Navbar from '../../components/Navbar/navbar';
 import Hero from '../../components/Hero/hero';
 import Gallery from '../../components/Gallery/gallery';
 import FloatingButtonWhatsApp from '../../components/FloatingButton/floatingbutton';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Gallery />
       <FloatingButtonWhatsApp />
+      <Footer />
     </>
   );
 }

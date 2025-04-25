@@ -19,7 +19,7 @@ export const TextContent = styled.div`
   max-width: 500px;
 
   h2 {
-    color: #343a40;
+    color: #5A5040;
     font-size: 36px;
     margin-bottom: 24px;
     font-weight: 600;
@@ -28,7 +28,7 @@ export const TextContent = styled.div`
   }
 
   p {
-    color: #6c757d;
+    color: #5A5040;
     font-size: 18px;
     line-height: 1.6;
     max-width: 500px;

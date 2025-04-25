@@ -5,7 +5,7 @@ import { Typography } from 'antd';
 const { Title } = Typography;
 
 export const ServicesWrapper = styled.div`
-  padding: 40px 20px;
+  padding: 60px 20px;
   background-color: #f0e6d2;
   display: flex;
   flex-direction: column;
@@ -26,11 +26,17 @@ export const SectionTitle = styled(Title)`
 
 export const StyledCard = styled(Card)`
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   height: 380px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
 
   .ant-card-body {
     padding: 20px;
@@ -55,11 +61,10 @@ export const ServiceButton = styled(Button)`
   border-radius: 8px;
   font-size: 16px;
   padding: 12px 0;
+  transition: background-color 0.3s ease-in-out;
 
-  
   &:hover {
     background-color: #3d2a1c;
-    transition: background-color 0.3s ease-in-out;
   }
 
   &:focus {
