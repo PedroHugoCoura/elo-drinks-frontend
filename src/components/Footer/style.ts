@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
-  background-color: #333; /* Fundo escuro */
+  background-color: #333;
   padding: 40px 20px;
   color: white;
 `;

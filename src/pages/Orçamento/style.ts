@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const OrçamentoSection = styled.section`
   width: 100%;
   padding: 60px 20px;
-  background-color: #e6d3b3; /* Cor de fundo suave, combinando com o site */
-  color: #5A5040; /* Cor do texto */
+  background-color: #e6d3b3;
+  color: #5A5040;
 `;
 
 export const OrçamentoTitle = styled.h2`

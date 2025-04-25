@@ -34,7 +34,7 @@ export const StyledCard = styled(Card)`
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+    transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
