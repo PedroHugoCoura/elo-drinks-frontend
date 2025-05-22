@@ -91,3 +91,8 @@ export const ButtonSubmit = styled.button`
     color: #5A5040;
   }
 `;
+
+export const ErrorText = styled.p`
+  color: red;
+  font-size: 0.8rem;
+`;
