@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonSubmit, PopupContainer, PopupContent, PopupMessage } from "./style"; // Importando os estilos
+import { ButtonSubmit, PopupContainer, PopupContent, PopupMessage } from "./style";
 
 interface PopupProps {
   message: string;

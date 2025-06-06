@@ -1,6 +1,6 @@
 import { FooterWrapper, FooterContent, FooterLogo, FooterSection, FooterTitle, FooterText, SocialIcons, SocialIcon } from './style';
 import { Container } from '../../style/container';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Usando ícones de redes sociais
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { Logo } from '../Navbar/style';
 
 export default function Footer() {
